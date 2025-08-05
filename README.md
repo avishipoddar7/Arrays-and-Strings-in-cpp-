@@ -1,5 +1,5 @@
 # Arrays-and-Strings-in-cpp-
-️***
+---
 # 🚀 C++ Basics: Array & String Exercises
 
 Welcome! This repository is a curated collection of simple C++ programs demonstrating fundamental operations on **arrays** and **strings**. Each file is a standalone exercise, perfect for anyone starting their journey with C++ or looking to brush up on the basics.
