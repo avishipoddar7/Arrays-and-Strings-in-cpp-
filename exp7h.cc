@@ -1,16 +1,27 @@
 //exp7h
-// string length 
+// string reversed 
 
 #include <iostream>
-using namespace std ; 
-int main (){
-    string a ; 
-    cout<<"Enter a string: ";
-    cin>>a;
+#include<string>
+using namespace std;
+
+int main() {
+    string str ="Good Morning" ; 
+    int count = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        count++;
+    }
+
+    cout << "The length of the string is: " << count << endl;
     
-    int n = a.length();
-    cout<<"The lenght of the string is "<<n<<endl ;
-
-
-    return 0; 
+    cout<<"Reversed String:";
+    for(int i = count ; i >= 0; i--){
+        cout<<str[i];
+    }
+    return 0;
 }
+
+/*  OUTPUT 
+The length of the string is: 12
+Reversed String:gninroM dooG
+*/

@@ -2,16 +2,36 @@
 //palindrome 
 
 #include <iostream>
-using namespace std ;
-int main(){
-    string a ; 
-    cout<<"Enter a string: ";
-    cin>>a;
-     for (int a=0;a<n/2;i++){
-        if(i[a]!=i[n-1-a]){
-            isPalindrome=false;
+#include<string>
+using namespace std;
+
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    cin >> str;
+
+    int len = str.length();
+    bool isPalindrome = true;
+
+    for (int i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            isPalindrome = false;
             break;
-            
         }
-     }
+    }
+
+    if (isPalindrome)
+        cout << "The string is a palindrome." << endl;
+    else
+        cout << "The string is not a palindrome." << endl;
+
+    return 0;
 }
+
+/*  OUTPUT 
+Enter a string: malayalam
+The string is a palindrome.
+
+Enter a string: morning
+The string is not a palindrome.
+*/

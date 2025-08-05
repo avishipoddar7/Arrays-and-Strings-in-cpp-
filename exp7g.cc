@@ -1,21 +1,34 @@
 //exp7g 
 // concatenation of string 
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    string str1, str2, result;
-
-    cout << "Enter first string: ";
-    getline(cin, str1);  
-
-    cout << "Enter second string: ";
-    getline(cin, str2);  
+int main(){
+    string str1;
+    string str2;
+    string str3;
     
-    result = str1 + " " + str2;  
+    cout<<"Enter string one: ";
+    cin>>str1;
+    
+    cout<<"Enter string two: ";
+    cin>>str2;
+    
+    cout<<endl<<"String 1 is: "<<str1<<endl;
+    cout<<"String 2 is: "<<str2<<endl;
 
-    cout << "Concatenated string: " << result << endl;
+    str3=str1+str2;
+    cout<<"Concateneated string is: "<<str3<<endl;
 
     return 0;
 }
+
+/*  OUTPUT 
+Enter string one: Avishi
+Enter string two: Poddar 
+
+String 1 is: Avishi 
+String 2 is: Poddar
+Concateneated string is: AvishiPoddar
+*/
